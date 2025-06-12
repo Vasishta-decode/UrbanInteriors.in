@@ -122,61 +122,54 @@ const Process = () => {
         </div>
 
         {/* Process Steps - Mobile First Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="group bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 relative overflow-hidden w-full min-h-[280px]"
+              className="group bg-white p-6 rounded-2xl transition-all duration-500 relative w-full min-h-[280px] hover:-translate-y-1"
             >
-              {/* Base content - Always visible */}
-              <div className="relative z-10">
-                <div className="flex items-center justify-between mb-4 sm:mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-[#FFF7ED] flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                    <step.icon className="h-6 w-6 text-[#D97706]" />
-                  </div>
-                  <span className="text-[#D97706] font-bold text-sm px-3 py-1 bg-[#FFF7ED] rounded-full">
-                    {step.duration}
-                  </span>
-                </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#D97706] transition-colors duration-300">
-                  {step.title}
-                </h3>
-                <p className="text-[#1E293B] text-sm sm:text-base leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
+              {/* Card Inner Shadow/Border */}
+              <div className="absolute inset-0 rounded-2xl shadow-[inset_0_0_0_1px_rgba(0,0,0,0.08)] group-hover:shadow-[inset_0_0_0_1px_rgba(217,119,6,0.4)]"></div>
+              
+              {/* Outer Shadow */}
+              <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-[#D97706]/0 via-[#D97706]/0 to-[#D97706]/0 group-hover:from-[#D97706]/10 group-hover:via-[#D97706]/20 group-hover:to-[#D97706]/10 blur opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
 
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out p-6 sm:p-8">
-                <div className="relative h-full flex flex-col">
-                  <div className="mb-6">
-                    <div className="flex items-center space-x-3 mb-4">
-                      <div className="w-10 h-10 rounded-lg bg-[#FFF7ED] flex items-center justify-center">
-                        <step.icon className="h-5 w-5 text-[#D97706]" />
-                      </div>
-                      <h3 className="text-lg sm:text-xl font-semibold text-[#D97706]">
-                        {step.title}
-                      </h3>
+              {/* Content Container */}
+              <div className="relative">
+                {/* Header */}
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FFF7ED] to-[#FFEDD5] flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-[4deg]">
+                      <step.icon className="h-6 w-6 text-[#D97706]" />
                     </div>
-                    <ul className="space-y-3">
-                      {step.details.map((detail, idx) => (
-                        <li 
-                          key={idx} 
-                          className="flex items-start space-x-3 transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300" 
-                          style={{ transitionDelay: `${idx * 100}ms` }}
-                        >
-                          <Check className="h-5 w-5 text-[#D97706] mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-800 text-sm leading-relaxed">{detail}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <span className="text-[#D97706] font-medium text-sm px-3 py-1 bg-[#FFF7ED] rounded-full">
+                      {step.duration}
+                    </span>
                   </div>
-                  <div className="mt-auto pt-4 border-t border-gray-100">
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="font-medium text-[#D97706]">Timeline:</span>
-                      <span className="text-gray-800">{step.duration}</span>
+                </div>
+
+                {/* Title and Description */}
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#D97706] transition-colors duration-300">
+                    {step.title}
+                  </h3>
+                  <p className="text-[#1E293B]/80 text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+
+                {/* Details List */}
+                <div className="space-y-2.5">
+                  {step.details.map((detail, idx) => (
+                    <div 
+                      key={idx}
+                      className="flex items-center space-x-2 text-sm text-gray-600 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                      style={{ transitionDelay: `${idx * 100}ms` }}
+                    >
+                      <Check className="h-4 w-4 text-[#D97706]/70" />
+                      <span>{detail}</span>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
