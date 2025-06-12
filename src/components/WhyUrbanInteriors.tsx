@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Award, Heart, Lightbulb, Shield, Star, TrendingUp, Users, Palette, Clock, Wrench, CheckCircle } from 'lucide-react';
+import core from '../img/Our core.jpg';
 
 const WhyUrbanInteriors = () => {
   const [isStatsVisible, setIsStatsVisible] = useState(false);
@@ -246,7 +247,7 @@ const WhyUrbanInteriors = () => {
           <div className="lg:col-span-7 relative">
             <div className="h-[300px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/src/img/Our core.jpg" 
+                src={core} 
                 alt="Our Core Values"
                 className="w-full h-full object-cover hover:scale-102 transition-transform duration-500"
               />
