@@ -51,14 +51,14 @@ const Hero = () => {
   ];
 
   return (
-    <div id="home" className="min-h-[80vh] pt-16 bg-white">
+    <div id="home" className="min-h-[80vh] pt-24 mt-4 bg-white">
       {/* Hero Section */}
       <section className="relative px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Main Content Card */}
           <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg">
             {/* Background Image Container */}
-            <div className="relative w-full h-[calc(100vh-8rem)] max-h-[600px]">
+            <div className="relative w-full h-[calc(100vh-10rem)] max-h-[600px]">
               <div 
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
