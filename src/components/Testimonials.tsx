@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Star, Quote, ChevronLeft, ChevronRight, Award, Heart } from 'lucide-react';
 import client1 from '../img/Client 1.jpg';
-import client2 from '../img/Client 2.jpg';
-import client3 from '../img/Client 3.jpg';
-import client4 from '../img/Client 4.jpg';
+import client2 from '../img/client 2.jpg';
+import client3 from '../img/client 3.jpg';
+import client4 from '../img/client 4.jpg';
 
 const testimonials = [
   {
