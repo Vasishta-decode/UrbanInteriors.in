@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Award, Users, Palette, Clock } from 'lucide-react';
+import heroBg from '../img/Interior design BG.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -61,7 +62,7 @@ const Hero = () => {
               <div 
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
-                  backgroundImage: `url('/src/img/Interior design BG.jpg')`,
+                  backgroundImage: `url(${heroBg})`,
                 }}
               >
                 {/* Gradient Overlay */}

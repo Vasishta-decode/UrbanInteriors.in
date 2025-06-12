@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { ExternalLink, Calendar, MapPin, ArrowRight } from 'lucide-react';
+import modularKitchen from '../img/Modular Kitchen.jpg';
+import wardrobe from '../img/Wardrobe.jpg';
+import floorWardrobe from '../img/Floor to Ceiling Wardrobe.jpg';
+import entertainmentUnits from '../img/Entertainment Units.jpg';
+import poojaRoom from '../img/Pooja room.jpg';
+import falseCeiling from '../img/False Ceiling.jpg';
+import wallPainting from '../img/Wall painting.jpg';
+import woodenFlooring from '../img/Wooden Flooring.jpg';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -30,7 +38,7 @@ const Projects = () => {
       id: 1,
       title: 'Modular Kitchen',
       description: 'Premium modular kitchen with Hettich/Hafele/Ebco hardware & accessories. Using top quality materials like BWP Plywood, BWR Plywood, HDHMR Board, and WPC.',
-      image: '/src/img/Modular Kitchen.jpg',
+      image: modularKitchen,
       category: 'modular-kitchen',
       features: ['Premium Hardware', 'Quality Materials', 'Custom Design']
     },
@@ -38,7 +46,7 @@ const Projects = () => {
       id: 2,
       title: 'Hinged & Sliding Wardrobe',
       description: 'Custom wardrobes using MR Plywood, HDHMR Board, and PLPB with premium finishes including laminates, acrylic, aluminum & lacquered glass.',
-      image: '/src/img/Wardrobe.jpg',
+      image: wardrobe,
       category: 'wardrobe',
       features: ['Custom Design', 'Premium Finishes', 'Quality Hardware']
     },
@@ -46,7 +54,7 @@ const Projects = () => {
       id: 3,
       title: 'Floor to Ceiling Wardrobe',
       description: 'Luxury floor to ceiling wardrobes with Aristo/Armadio shutters, featuring sliding options up to 9.5 feet with both sides soft close and lock.',
-      image: '/src/img/Floor to Ceiling Wardrobe.jpg',
+      image: floorWardrobe,
       category: 'wardrobe',
       features: ['Luxury Design', 'Soft Close', 'Maximum Storage']
     },
@@ -54,7 +62,7 @@ const Projects = () => {
       id: 4,
       title: 'Entertainment Units',
       description: 'Custom entertainment units with premium materials and finishes, including veneer, laminates, acrylic, and aluminum & lacquered glass options.',
-      image: '/src/img/Entertainment Units.jpg',
+      image: entertainmentUnits,
       category: 'entertainment',
       features: ['Custom Design', 'Premium Finishes', 'Modern Look']
     },
@@ -62,7 +70,7 @@ const Projects = () => {
       id: 5,
       title: 'Pooja Room',
       description: 'Specially designed pooja rooms using MR Plywood, HDHMR Board, and WPC with premium finishes and hardware.',
-      image: '/src/img/Pooja Room.jpg',
+      image: poojaRoom,
       category: 'other',
       features: ['Sacred Space', 'Premium Materials', 'Custom Design']
     },
@@ -70,7 +78,7 @@ const Projects = () => {
       id: 6,
       title: 'False Ceiling',
       description: 'Professional false ceiling services using Gypframe Expert Channel and Gyproc Boards from Saint Gobain.',
-      image: '/src/img/False Ceiling.jpg',
+      image: falseCeiling,
       category: 'other',
       features: ['Professional Design', 'Quality Materials', 'Expert Installation']
     },
@@ -78,7 +86,7 @@ const Projects = () => {
       id: 7,
       title: 'Wall Painting & Wallpaper',
       description: 'Premium wall finishes with Asian Paints (Royale/Texture/Premium Emulsion) and designer wallpapers from Marshalls & Nilaya.',
-      image: '/src/img/Wall Painting.jpg',
+      image: wallPainting,
       category: 'other',
       features: ['Premium Finishes', 'Designer Options', 'Quality Materials']
     },
@@ -86,7 +94,7 @@ const Projects = () => {
       id: 8,
       title: 'Wooden Flooring',
       description: 'High-quality wooden flooring solutions from Action Tesa and Green Floor Max, including engineered, laminate, and design wood floors.',
-      image: '/src/img/Wooden Flooring.jpg',
+      image: woodenFlooring,
       category: 'other',
       features: ['Premium Quality', 'Multiple Options', 'Expert Installation']
     }
