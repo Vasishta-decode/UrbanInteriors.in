@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../img/Logo 2.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +48,7 @@ const Navbar = () => {
           >
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white rounded-xl shadow-sm group-hover:shadow-md transition-shadow duration-300">
               <img 
-                src="/src/img/Logo 2.png" 
+                src={logo} 
                 alt="Urban Interiors Symbol" 
                 className="w-[85%] h-[85%] object-contain transition-transform duration-300 group-hover:scale-105"
               />
