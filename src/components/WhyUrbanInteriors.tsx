@@ -171,7 +171,7 @@ const WhyUrbanInteriors = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Why Choose
-            <span className="text-[#D97706]">UrbanInteriors?</span>
+            <span className="text-[#D97706]"> UrbanInteriors?</span>
           </h2>
           <p className="text-xl text-[#1E293B] max-w-3xl mx-auto leading-relaxed font-medium">
             Experience the perfect blend of German precision, artistic design, and customer-centric approach. 
