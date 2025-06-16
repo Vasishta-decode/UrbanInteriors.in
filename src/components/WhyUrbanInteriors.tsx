@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Award, Heart, Lightbulb, Shield, Star, TrendingUp, Users, Palette, Clock, Wrench, CheckCircle } from 'lucide-react';
 import core from '../img/Our core.jpg';
+import woodenFlooring from '../img/Wooden Flooring.jpg';
+import bathroom1 from '../img/Bathroom 1 (Home page ).jpg';
+import kitchen2 from '../img/Kitchen 2  (Home page ).jpg';
+import kitchen1 from '../img/Kitchen 1  (Home page ).jpg';
+import livingRoom from '../img/Living room (Home page ).jpg';
 
 const WhyUrbanInteriors = () => {
   const [isStatsVisible, setIsStatsVisible] = useState(false);
@@ -43,46 +48,46 @@ const WhyUrbanInteriors = () => {
   const reasons = [
     {
       icon: Award,
-      title: 'Best Price Guarantee',
-      description: 'Transparent pricing with no hidden costs. We match any competitor\'s price for the same quality.',
+      title: 'Unmatched Value Proposition',
+      description: 'We offer transparent pricing without hidden costs, committed to matching any competitor\'s price for equivalent quality and design excellence.',
       stats: '20-30% Less'
     },
     {
       icon: Wrench,
-      title: 'German Technology',
-      description: 'State-of-the-art German machinery ensuring precision and durability in every piece',
+      title: 'Precision German Engineering',
+      description: 'Our designs are brought to life using state-of-the-art German machinery, ensuring unparalleled precision, durability, and a flawless finish in every piece.',
       stats: '99.9% Precision'
     },
     {
       icon: Shield,
-      title: '10-Year Warranty',
-      description: 'Comprehensive warranty coverage on materials and workmanship for complete peace of mind',
+      title: 'Comprehensive 10-Year Warranty',
+      description: 'Gain complete peace of mind with our extensive 10-year warranty, covering both materials and superior workmanship.',
       stats: '10 Years'
     },
     {
       icon: Clock,
-      title: 'Quick Turnaround',
-      description: 'Swift project completion without compromising on quality or attention to detail',
+      title: 'Expedited Project Completion',
+      description: 'Benefit from our efficient processes, delivering swift project completion within 45 days without compromising our rigorous standards of quality and attention to detail.',
       stats: '45 Days'
     }
   ];
 
   const values = [
     {
-      title: 'Quality Assurance',
-      description: 'Rigorous quality checks at every stage of production and installation'
+      title: 'Exemplary Quality Assurance',
+      description: 'We implement rigorous multi-stage quality checks at every phase of production and installation, ensuring exceptional standards.'
     },
     {
-      title: 'Sustainable Practices',
-      description: 'Eco-friendly materials and sustainable manufacturing processes'
+      title: 'Commitment to Sustainable Practices',
+      description: 'Our dedication to environmental responsibility is reflected in our use of eco-friendly materials and sustainable manufacturing processes.'
     },
     {
-      title: 'Innovation Focus',
-      description: 'Constantly updating our techniques and designs with latest industry trends'
+      title: 'Pioneering Innovation',
+      description: 'We continuously integrate the latest industry trends and technological advancements, ensuring our designs and methods remain at the forefront of interior design.'
     },
     {
-      title: 'Transparent Process',
-      description: 'Regular updates and complete visibility of your project progress'
+      title: 'Unwavering Process Transparency',
+      description: 'Experience full visibility into your project\'s progress with regular, comprehensive updates and open communication from concept to completion.'
     }
   ];
 
@@ -161,7 +166,7 @@ const WhyUrbanInteriors = () => {
   };
 
   return (
-    <div id="why-urban-interiors" className="py-20 bg-gray-50">
+    <div id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -243,7 +248,7 @@ const WhyUrbanInteriors = () => {
             </div>
           </div>
 
-          {/* Image Section */}
+          {/* Core Image */}
           <div className="lg:col-span-7 relative">
             <div className="h-[300px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
@@ -261,43 +266,137 @@ const WhyUrbanInteriors = () => {
           </div>
         </div>
 
+        {/* Premium Showcase Section */}
+        <div className="mt-20">
+          <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+            Our Premium <span className="text-[#D97706]">Projects</span>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Wooden Flooring */}
+            <div className="relative group">
+              <div className="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={woodenFlooring}
+                  alt="Premium Wooden Flooring"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute -bottom-6 right-6 bg-[#D97706] text-white p-6 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">100%</div>
+                    <div className="text-sm font-medium">Quality Materials</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Kitchen Showcase */}
+            <div className="relative group">
+              <div className="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={kitchen1}
+                  alt="Modern Kitchen Design"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute -bottom-6 right-6 bg-[#D97706] text-white p-6 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">500+</div>
+                    <div className="text-sm font-medium">Kitchens Designed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Living Room */}
+            <div className="relative group">
+              <div className="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={livingRoom}
+                  alt="Elegant Living Room"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute -bottom-6 right-6 bg-[#D97706] text-white p-6 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">1000+</div>
+                    <div className="text-sm font-medium">Happy Clients</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bathroom */}
+            <div className="relative group">
+              <div className="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={bathroom1}
+                  alt="Luxury Bathroom"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute -bottom-6 right-6 bg-[#D97706] text-white p-6 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">300+</div>
+                    <div className="text-sm font-medium">Bathrooms Renovated</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Kitchen 2 */}
+            <div className="relative group">
+              <div className="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={kitchen2}
+                  alt="Contemporary Kitchen"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute -bottom-6 right-6 bg-[#D97706] text-white p-6 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">98%</div>
+                    <div className="text-sm font-medium">Client Satisfaction</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Stats Section */}
-        <div 
-          ref={statsRef}
-          data-section="stats"
-          className={`
-            bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-100 transform transition-all duration-500
-            ${activeSection === 'stats' ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}
-          `}
-        >
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="mt-20 mb-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Our <span className="text-[#D97706]">Impact</span>
-            </h3>
-            <p className="text-xl text-[#1E293B]">Numbers that speak for themselves</p>
+            </h2>
+            <p className="text-xl text-[#1E293B] leading-relaxed font-medium">
+              Numbers that speak for themselves
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            {stats.map((stat, index) => (
-              <div 
-                key={index}
-                className={`
-                  space-y-4 transform transition-all duration-500
-                  ${isStatsVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}
-                `}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="text-4xl font-bold text-[#D97706]">
-                  <AnimatedNumber
-                    startValue={stat.startValue}
-                    endValue={stat.endValue}
-                    suffix={stat.suffix}
-                    isVisible={isStatsVisible}
-                  />
+          <div 
+            ref={statsRef}
+            data-section="stats"
+            className={`
+              bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-100 transform transition-all duration-500 hover:shadow-2xl hover:scale-[1.01] ease-out
+              ${activeSection === 'stats' ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}
+            `}
+          >
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-y-12 md:gap-x-12 lg:gap-x-16">
+              {stats.map((stat, index) => (
+                <div 
+                  key={index}
+                  className="text-center"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="text-[#D97706] text-6xl md:text-7xl font-extrabold mb-2">
+                    <AnimatedNumber 
+                      startValue={stat.startValue}
+                      endValue={stat.endValue}
+                      suffix={stat.suffix}
+                      isVisible={isStatsVisible}
+                    />
+                  </div>
+                  <p className="text-[#1E293B] text-xl font-medium">{stat.label}</p>
                 </div>
-                <div className="text-[#1E293B] font-medium">{stat.label}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -13,8 +13,8 @@ const Process = () => {
   const steps = [
     {
       icon: Calendar,
-      title: 'Book an appointment',
-      description: 'Schedule a consultation with our design experts.',
+      title: 'Initial Consultation',
+      description: 'Initiate your design journey with a personalized consultation, tailored to your schedule and preferences.',
       duration: 'Day 1',
       details: [
         'Online or in-person consultation',
@@ -25,8 +25,8 @@ const Process = () => {
     },
     {
       icon: Calculator,
-      title: 'Get the quote',
-      description: 'Receive a detailed quote based on your requirements.',
+      title: 'Transparent Quotation',
+      description: 'Receive a comprehensive and transparent quotation, meticulously detailing all aspects of your project with no hidden costs.',
       duration: 'Day 2-3',
       details: [
         'Transparent pricing',
@@ -37,8 +37,8 @@ const Process = () => {
     },
     {
       icon: Palette,
-      title: 'Meet our designer',
-      description: 'Personalize your design with our expert designers.',
+      title: 'Collaborative Design Session',
+      description: 'Collaborate directly with our expert designers to personalize every detail of your space, ensuring your vision is brought to life.',
       duration: 'Day 4-5',
       details: [
         'Design customization',
@@ -49,8 +49,8 @@ const Process = () => {
     },
     {
       icon: FileText,
-      title: 'Detailed drawing',
-      description: 'Review and approve detailed design drawings.',
+      title: 'Precision Design & Visualization',
+      description: 'Approve meticulously crafted 2D designs and immersive 3D visualizations, ensuring every detail aligns with your expectations.',
       duration: 'Day 6-8',
       details: [
         'Technical drawings',
@@ -61,8 +61,8 @@ const Process = () => {
     },
     {
       icon: Factory,
-      title: 'Production',
-      description: 'Manufacturing at our own factory with German machinery.',
+      title: 'Advanced Manufacturing',
+      description: 'Experience superior craftsmanship as your project is brought to life in our state-of-the-art factory, leveraging advanced German machinery for unparalleled precision.',
       duration: 'Day 9-30',
       details: [
         'Quality raw materials',
@@ -73,8 +73,8 @@ const Process = () => {
     },
     {
       icon: Truck,
-      title: 'Material delivery',
-      description: 'Safe delivery of your custom furniture and materials.',
+      title: 'Logistics & Secure Delivery',
+      description: 'Our dedicated logistics ensure the secure and timely delivery of all custom furniture and premium materials directly to your site.',
       duration: 'Day 31-32',
       details: [
         'Careful packaging',
@@ -85,8 +85,8 @@ const Process = () => {
     },
     {
       icon: Wrench,
-      title: 'Installation',
-      description: 'Professional installation by our expert team.',
+      title: 'Expert Installation',
+      description: 'Our certified installation team meticulously assembles and fits every component, ensuring flawless execution and a perfect finish.',
       duration: 'Day 33-44',
       details: [
         'Expert installation team',
@@ -97,8 +97,8 @@ const Process = () => {
     },
     {
       icon: CheckCircle,
-      title: 'Project handover',
-      description: 'On-time project completion and handover.',
+      title: 'Final Handover & Assurance',
+      description: 'Celebrate the timely completion of your project with a thorough final walkthrough and comprehensive handover, backed by our commitment to your satisfaction.',
       duration: 'Day 45',
       details: [
         'Final inspection',
@@ -114,10 +114,10 @@ const Process = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            How it <span className="text-[#D97706]">Works</span>
+            Our <span className="text-[#D97706]">Seamless Process</span>
           </h2>
           <p className="text-lg sm:text-xl text-[#1E293B] max-w-3xl mx-auto leading-relaxed">
-            Our proven 45-day process ensures a smooth and efficient journey from concept to completion.
+            Experience our meticulously designed process, guiding your vision from concept to exquisite completion within 45 days.
           </p>
         </div>
 

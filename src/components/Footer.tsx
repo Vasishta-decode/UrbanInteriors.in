@@ -2,28 +2,35 @@ import React from 'react';
 import { Home, Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 
 const Footer = () => {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const footerLinks = {
     company: [
-      { name: 'About Us', href: '#about' },
-      { name: 'Our Services', href: '#services' },
-      { name: 'Our Projects', href: '#projects' },
-      { name: 'Contact Us', href: '#contact' }
+      { name: 'About Us', id: 'about' },
+      { name: 'Our Services', id: 'services' },
+      { name: 'Our Projects', id: 'projects' },
+      { name: 'Contact Us', id: 'contact' }
     ],
     services: [
-      { name: 'Kitchen', href: '#services' },
-      { name: 'Wardrobe', href: '#services' },
-      { name: 'TV Unit', href: '#services' },
-      { name: 'Crockery Unit', href: '#services' },
-      { name: 'Study Table', href: '#services' },
-      { name: 'Shoe Rack', href: '#services' },
-      { name: 'False Ceiling', href: '#services' },
-      { name: 'Painting', href: '#services' }
+      { name: 'Kitchen', id: 'services' },
+      { name: 'Wardrobe', id: 'services' },
+      { name: 'TV Unit', id: 'services' },
+      { name: 'Crockery Unit', id: 'services' },
+      { name: 'Study Table', id: 'services' },
+      { name: 'Shoe Rack', id: 'services' },
+      { name: 'False Ceiling', id: 'services' },
+      { name: 'Painting', id: 'services' }
     ],
     support: [
-      { name: 'Design Consultation', href: '#contact' },
-      { name: 'Factory Visit', href: '#contact' },
-      { name: 'Get Estimate', href: '#contact' },
-      { name: 'Customer Support', href: '#contact' }
+      { name: 'Design Consultation', id: 'contact' },
+      { name: 'Factory Visit', id: 'contact' },
+      { name: 'Get Estimate', id: 'contact' },
+      { name: 'Customer Support', id: 'contact' }
     ],
     social: [
       { name: 'Facebook', href: 'https://www.facebook.com/urbaninteriors.in', icon: Facebook },
@@ -79,8 +86,8 @@ const Footer = () => {
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-[#D97706] transition-colors duration-300"
+                    onClick={() => handleScroll(link.id)}
+                    className="text-gray-400 hover:text-[#D97706] transition-colors duration-300 cursor-pointer"
                   >
                     {link.name}
                   </a>
@@ -96,8 +103,8 @@ const Footer = () => {
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-[#D97706] transition-colors duration-300"
+                    onClick={() => handleScroll(link.id)}
+                    className="text-gray-400 hover:text-[#D97706] transition-colors duration-300 cursor-pointer"
                   >
                     {link.name}
                   </a>
@@ -113,8 +120,8 @@ const Footer = () => {
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
                   <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-[#D97706] transition-colors duration-300"
+                    onClick={() => handleScroll(link.id)}
+                    className="text-gray-400 hover:text-[#D97706] transition-colors duration-300 cursor-pointer"
                   >
                     {link.name}
                   </a>

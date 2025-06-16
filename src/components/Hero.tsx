@@ -30,28 +30,28 @@ const Hero = () => {
   const features = [
     {
       icon: Award,
-      title: 'Online Design Consultation',
-      description: 'No Need to step out of your house, Get the design consultation at your comfort of your House'
+      title: 'Personalized Online Consultation',
+      description: 'Receive expert design guidance from the comfort of your home, tailored to your unique style and needs.'
     },
     {
       icon: Users,
-      title: '45 days Project Delivery',
-      description: 'Proper quality checks done & on-site supervision'
+      title: 'Efficient Project Delivery',
+      description: 'Benefit from our streamlined process ensuring timely project completion within 45 days, backed by rigorous quality checks and dedicated on-site supervision.'
     },
     {
       icon: Palette,
-      title: 'Premium Material',
-      description: 'The Industries best materials used for your project'
+      title: 'Exquisite Material Selection',
+      description: 'We meticulously source and utilize only the finest, industry-leading materials to ensure unparalleled durability, aesthetics, and lasting quality for your project.'
     },
     {
       icon: Clock,
-      title: 'Own Factory',
-      description: 'Quality Workmanship of the modular fitted furniture with German Machineries'
+      title: 'In-House German Manufacturing',
+      description: 'Experience precision and superior craftsmanship with our state-of-the-art in-house factory, equipped with advanced German machinery for bespoke modular furniture.'
     }
   ];
 
   return (
-    <div id="home" className="min-h-[80vh] pt-24 mt-4 bg-white">
+    <div id="about" className="min-h-[80vh] pt-24 mt-4 bg-white">
       {/* Hero Section */}
       <section className="relative px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -75,19 +75,19 @@ const Hero = () => {
                   <div className="max-w-xl">
                     {/* Title */}
                     <div className="space-y-2 mb-6">
-                      <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 animate-on-scroll opacity-0">
-                        Interiors at
+                      <h1 className="text-4xl sm:text-5xl font-bold text-[#fe9923] animate-on-scroll opacity-0">
+                        Crafting Exquisite
                       </h1>
-                      <h1 className="text-4xl sm:text-5xl font-bold text-[#D97706] animate-on-scroll opacity-0" 
+                      <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 animate-on-scroll opacity-0" 
                         style={{ animationDelay: '0.2s' }}>
-                        Great Price
+                        Living Spaces
                       </h1>
                     </div>
 
                     {/* Description */}
                     <p className="text-base sm:text-lg text-gray-700 mb-8 max-w-md animate-on-scroll opacity-0"
                       style={{ animationDelay: '0.4s' }}>
-                      Transform your space with UrbanInteriors - Premium interior design solutions at the best price with complete transparency.
+                      Transform your vision into reality with UrbanInteriors – where premium design meets unparalleled craftsmanship and transparent value.
                     </p>
 
                     {/* Buttons */}
@@ -95,7 +95,7 @@ const Hero = () => {
                       style={{ animationDelay: '0.6s' }}>
                       <button 
                         onClick={() => scrollToSection('projects')}
-                        className="w-full sm:w-auto px-6 py-3.5 bg-[#D97706] text-white text-base font-semibold rounded-xl hover:bg-[#B45309] transition-all duration-300 flex items-center justify-center group"
+                        className="w-full sm:w-auto px-6 py-3.5 bg-[#fe9923] text-white text-base font-semibold rounded-xl hover:bg-[#d07f1f] transition-all duration-300 flex items-center justify-center group"
                       >
                         View Our Projects
                         <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -105,7 +105,7 @@ const Hero = () => {
                         className="w-full sm:w-auto px-6 py-3.5 bg-white text-gray-900 text-base font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 border-2 border-gray-200 flex items-center justify-center group"
                       >
                         Book Design Consultation
-                        <ArrowRight className="ml-2 h-5 w-5 text-[#D97706] group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="ml-2 h-5 w-5 text-[#fe9923] group-hover:translate-x-1 transition-transform" />
                       </button>
                     </div>
                   </div>
