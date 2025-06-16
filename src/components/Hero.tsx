@@ -65,47 +65,47 @@ const Hero = () => {
                   backgroundImage: `url(${heroBg})`,
                 }}
               >
-                {/* Gradient Overlay */}
+                {/* Gradient Overlay - Adjusted for better mobile visibility */}
                 <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/0 to-transparent"></div>
               </div>
 
               {/* Content Container */}
               <div className="relative h-full flex items-center">
-                <div className="w-full px-6 sm:px-8 lg:px-12">
+                <div className="w-full px-4 sm:px-8 lg:px-12">
                   <div className="max-w-xl">
-                    {/* Title */}
-                    <div className="space-y-2 mb-6">
-                      <h1 className="text-4xl sm:text-5xl font-bold text-[#fe9923] animate-on-scroll opacity-0">
+                    {/* Title - Adjusted for mobile */}
+                    <div className="space-y-2 mb-4 sm:mb-6">
+                      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#fe9923] animate-on-scroll opacity-0">
                         Crafting Exquisite
                       </h1>
-                      <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 animate-on-scroll opacity-0" 
+                      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 animate-on-scroll opacity-0" 
                         style={{ animationDelay: '0.2s' }}>
                         Living Spaces
                       </h1>
                     </div>
 
-                    {/* Description */}
-                    <p className="text-base sm:text-lg text-gray-700 mb-8 max-w-md animate-on-scroll opacity-0"
+                    {/* Description - Adjusted for mobile */}
+                    <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-6 sm:mb-8 max-w-md animate-on-scroll opacity-0"
                       style={{ animationDelay: '0.4s' }}>
                       Transform your vision into reality with UrbanInteriors – where premium design meets unparalleled craftsmanship and transparent value.
                     </p>
 
-                    {/* Buttons */}
+                    {/* Buttons - Improved mobile layout */}
                     <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 animate-on-scroll opacity-0"
                       style={{ animationDelay: '0.6s' }}>
                       <button 
                         onClick={() => scrollToSection('projects')}
-                        className="w-full sm:w-auto px-6 py-3.5 bg-[#fe9923] text-white text-base font-semibold rounded-xl hover:bg-[#d07f1f] transition-all duration-300 flex items-center justify-center group"
+                        className="w-full sm:w-auto px-4 sm:px-6 py-3 sm:py-3.5 bg-[#fe9923] text-white text-sm sm:text-base font-semibold rounded-xl hover:bg-[#d07f1f] transition-all duration-300 flex items-center justify-center group"
                       >
                         View Our Projects
-                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
                       </button>
                       <button 
                         onClick={() => scrollToSection('contact')}
-                        className="w-full sm:w-auto px-6 py-3.5 bg-white text-gray-900 text-base font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 border-2 border-gray-200 flex items-center justify-center group"
+                        className="w-full sm:w-auto px-4 sm:px-6 py-3 sm:py-3.5 bg-white text-gray-900 text-sm sm:text-base font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 border-2 border-gray-200 flex items-center justify-center group"
                       >
                         Book Design Consultation
-                        <ArrowRight className="ml-2 h-5 w-5 text-[#fe9923] group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 text-[#fe9923] group-hover:translate-x-1 transition-transform" />
                       </button>
                     </div>
                   </div>

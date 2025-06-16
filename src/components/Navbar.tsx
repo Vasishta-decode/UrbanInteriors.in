@@ -24,7 +24,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-4">
+    <div className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-2 sm:py-4">
       <div 
         className={`
           max-w-7xl mx-auto rounded-2xl transition-all duration-500
@@ -33,14 +33,14 @@ const Navbar = () => {
             : 'bg-white/80 backdrop-blur-sm shadow-md border border-gray-100/50'}
         `}
       >
-        <div className="flex justify-between items-center h-16 px-4">
+        <div className="flex justify-between items-center h-14 sm:h-16 px-4">
           {/* Logo and Brand Name */}
           <Link 
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center space-x-3 group"
+            className="flex items-center space-x-2 sm:space-x-3 group"
           >
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white rounded-xl shadow-sm group-hover:shadow-md transition-shadow duration-300">
+            <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-white rounded-xl shadow-sm group-hover:shadow-md transition-shadow duration-300">
               <img 
                 src={logo} 
                 alt="Urban Interiors Symbol" 
@@ -48,7 +48,7 @@ const Navbar = () => {
               />
             </div>
             <div className="flex items-center">
-              <span className="text-lg sm:text-xl font-bold text-gray-900">
+              <span className="text-base sm:text-lg md:text-xl font-bold text-gray-900">
                 Urban<span className="text-[#D97706]">Interiors</span>
               </span>
             </div>
@@ -78,9 +78,9 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {isOpen ? (
-              <X className="h-6 w-6 text-gray-900" />
+              <X className="h-5 w-5 sm:h-6 sm:w-6 text-gray-900" />
             ) : (
-              <Menu className="h-6 w-6 text-gray-900" />
+              <Menu className="h-5 w-5 sm:h-6 sm:w-6 text-gray-900" />
             )}
           </button>
         </div>

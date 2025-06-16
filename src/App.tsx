@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Process from './pages/Process';
 import Contact from './pages/Contact';
-import WhatsAppButton from './components/WhatsAppButton';
+import FloatingButtons from './components/FloatingButtons';
 import SEO from './components/SEO';
 import StructuredData from './components/StructuredData';
 
@@ -43,7 +43,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
-          <WhatsAppButton />
+          <FloatingButtons />
         </div>
       </Router>
     </HelmetProvider>
