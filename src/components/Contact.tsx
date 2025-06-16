@@ -241,22 +241,22 @@ const Contact = () => {
               </div>
 
               {/* Contact Cards */}
-              <div className="grid grid-cols-2 divide-x divide-gray-100 border-t border-gray-100">
+              <div className="grid grid-cols-1 md:grid-cols-2 divide-x divide-gray-100 border-t border-gray-100">
                 {contactInfo.map((info, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="p-6 hover:bg-gray-50 transition-colors duration-300"
                   >
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start gap-4">
                       <div className="p-2 bg-[#D97706]/10 rounded-lg">
                         <info.icon className="h-5 w-5 text-[#D97706]" />
                       </div>
-                      <div>
+                      <div className="min-w-0 flex-grow">
                         <h5 className="font-semibold text-gray-900 mb-1">{info.title}</h5>
-                        <p className="text-[#1E293B] text-sm font-medium">{info.details}</p>
-                        <p className="text-sm text-gray-500">{info.description}</p>
+                        <p className="text-[#1E293B] text-sm font-medium break-words">{info.details}</p>
+                        <p className="text-sm text-gray-500 break-words">{info.description}</p>
                       </div>
-                  </div>
+                    </div>
                   </div>
                 ))}
               </div>
