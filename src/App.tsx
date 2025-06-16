@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -7,22 +8,45 @@ import Projects from './pages/Projects';
 import Process from './pages/Process';
 import Contact from './pages/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
+import SEO from './components/SEO';
+import StructuredData from './components/StructuredData';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-white overflow-x-hidden">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/process" element={<Process />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-        <WhatsAppButton />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen bg-white overflow-x-hidden">
+          <SEO 
+            title="Home"
+            description="Transform your space with Urban Interiors - Award-winning premium interior design services for residential, commercial, and hospitality projects."
+            keywords="interior design, home decor, commercial interiors, residential design, luxury interiors"
+          />
+          <StructuredData 
+            type="InteriorDesigner"
+            data={{
+              areaServed: "Your Service Area",
+              address: {
+                streetAddress: "Your Street Address",
+                city: "Your City",
+                state: "Your State",
+                postalCode: "Your Postal Code",
+                country: "Your Country"
+              },
+              phone: "Your Phone Number"
+            }}
+          />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/process" element={<Process />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+          <WhatsAppButton />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 
