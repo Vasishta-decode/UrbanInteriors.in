@@ -6,6 +6,8 @@ import bathroom1 from '../img/Bathroom 1 (Home page ).jpg';
 import kitchen2 from '../img/Kitchen 2  (Home page ).jpg';
 import kitchen1 from '../img/Kitchen 1  (Home page ).jpg';
 import livingRoom from '../img/Living room (Home page ).jpg';
+import homeDVStudio from '../img/Home - DV Studio.jpg';
+
 
 const WhyUrbanInteriors = () => {
   const [isStatsVisible, setIsStatsVisible] = useState(false);
@@ -340,24 +342,42 @@ const WhyUrbanInteriors = () => {
               </div>
             </div>
 
-            {/* Kitchen 2 */}
-            <div className="relative group">
-              <div className="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src={kitchen2}
-                  alt="Contemporary Kitchen"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute -bottom-6 right-6 bg-[#D97706] text-white p-6 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">98%</div>
-                    <div className="text-sm font-medium">Client Satisfaction</div>
+              {/* Kitchen 2 */}
+              <div className="relative group">
+                <div className="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src={kitchen2}
+                    alt="Contemporary Kitchen"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute -bottom-6 right-6 bg-[#D97706] text-white p-6 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold">98%</div>
+                      <div className="text-sm font-medium">Client Satisfaction</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+
+              {/* DV Studio Home */}
+              <div className="relative group">
+                <div className="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src={homeDVStudio}
+                    alt="DV Studio Home"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute -bottom-6 right-6 bg-[#D97706] text-white p-6 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold">250+</div>
+                      <div className="text-sm font-medium">Clients</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
         {/* Stats Section */}
         <div className="mt-20 mb-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -385,7 +405,7 @@ const WhyUrbanInteriors = () => {
                   className="text-center"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="text-[#D97706] text-6xl md:text-7xl font-extrabold mb-2">
+                  <div className="text-[#D97706] text-5xl md:text-6xl font-black font-sans mb-2 tracking-tight drop-shadow-sm">
                     <AnimatedNumber 
                       startValue={stat.startValue}
                       endValue={stat.endValue}
@@ -393,7 +413,7 @@ const WhyUrbanInteriors = () => {
                       isVisible={isStatsVisible}
                     />
                   </div>
-                  <p className="text-[#1E293B] text-xl font-medium">{stat.label}</p>
+                  <p className="text-[#1E293B] text-lg md:text-xl font-semibold font-sans">{stat.label}</p>
                 </div>
               ))}
             </div>

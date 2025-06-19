@@ -10,6 +10,10 @@ import Contact from './pages/Contact';
 import FloatingButtons from './components/FloatingButtons';
 import SEO from './components/SEO';
 import StructuredData from './components/StructuredData';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
+import Videos from './pages/Videos';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -39,8 +43,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/process" element={<Process />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/videos" element={<Videos />} />
           </Routes>
           <Footer />
           <FloatingButtons />
